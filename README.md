@@ -2,7 +2,7 @@
 
 тестовый веб-сервер 
 
-1. для приема авторизационного токена (accessToken) amoCRM
+1. для приема code и последующего обмена code на авторизационный токен (accessToken) amoCRM
 
 2. для просмотра данных amoCRM через API
 
@@ -26,3 +26,7 @@
 
 > lt --port 3000 --subdomain test-amo-widget-server --print-requests
 
+
+### ссылки
+
+[AmoCRM Developers: Описание механизмов и работы с oAuth 2.0](https://www.amocrm.ru/developers/content/oauth/oauth)
