@@ -24,5 +24,5 @@
 
 > npm install -g localtunnel
 
-> lt lt -p 3000 -s test-amo-widget-server --print-requests
+> lt --port 3000 --subdomain test-amo-widget-server --print-requests
 
