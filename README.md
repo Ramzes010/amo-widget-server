@@ -6,6 +6,8 @@
 
 2. для просмотра данных amoCRM через API
 
+[Видео: amoCRM и oAuth 2.0](https://youtu.be/CxQcB5AsyHI)
+
 
 ### install & run
 
