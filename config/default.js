@@ -6,8 +6,8 @@ module.exports = {
         },
     },
     amoApp: {
-        clientId: '7db5dbc1-bc1f-4166-9ab3-89a94ff38987',
-        clientSecret: 'ani6FwYiAw7R8cHsS0DNdLhkenbmx406A6djkUfyOmSfWqClcE4LmmOcLqYBzzz',
+        clientId: 'fe482cae-00db-4e0e-b928-8d8887858a02',
+        clientSecret: 'iUlVPtDMEo5wNlulfCg40tJOgylHogJZ4cU2b9INEkdyaczXos0qPhP3plHTeSTn',
     },
     storeFile: './store/authdata.json',
 };
