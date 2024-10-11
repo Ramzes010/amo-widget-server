@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table id="deals-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Сумма</th>
+                <th>Статус</th>
+            </tr>
+        </thead>
+        <tbody id="deals-tbody"></tbody>
+    </table>
+    
+
+    <script>
+        fetch('/deals')
+    .then(response => response.json())
+    .then(deals => {
+        displayDeals(deals);
+    })
+    .catch(error => {
+        console.error('Ошибка при получении данных о сделках:', error);
+    });
+
+    function displayDeals(deals) {
+    const tableBody = document.getElementById('deals-tbody');
+    tableBody.innerHTML = '';
+
+    deals.forEach(deal => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${deal.id}</td>
+            <td>${deal.name}</td>
+            <td>${deal.price}</td>
+            <td>${deal.status}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+    </script>
+</body>
+</html>
